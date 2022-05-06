@@ -1,0 +1,163 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+:root {
+  --font: 'Open Sans';
+  --gray: #f4f7fe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--font);
+  box-sizing: border-box;
+}
+
+.lightbox {
+  position: fixed;
+  top: -200%;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0,0,0,0.6);
+  transition: 0.5s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  overflow-x: hidden;
+  overflow-y: scroll;
+}
+
+.lightbox.active {
+  top: 0;
+}
+
+.lightbox .box {
+  position: relative;
+  width: 500px;
+  background: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 20px 0;
+}
+
+.lightbox .box .box-header,
+.profile-wrapper {
+  display: flex;
+  align-items: center;
+}
+
+.lightbox .box .box-header {
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.profile-wrapper .profile-image {
+  position: relative;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  margin-right: 8px;
+}
+
+.profile-wrapper h3 {
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: royalblue;
+  line-height: 11px;
+  margin-top: 6px;
+}
+
+.profile-wrapper span {
+  font-size: 13px;
+  font-weight: 300;
+  color: #333;
+}
+
+.profile-wrapper .icon-wrapper #close-button {
+  position: relative;
+  color: #333;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.box .box-body,
+.box .box-body .image-box {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box .box-body .image-box .image {
+  width: 100%;
+  object-fit: cover;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  margin: 30px auto;
+  overflow: hidden;
+}
+
+.heading {
+  position: relative;
+  width: 100%;
+  background: royalblue;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+.heading h1 {
+  font-size: 40px;
+  font-weight: bold;
+  color: #fff;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.heading p {
+  font-size: 14px;
+  color: #f2f2f2;
+  line-height: 20px;
+  width: 80%;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  columns: 3;
+}
+
+.image-container .image-box {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.image-container .image-box .image-gallery {
+  width: 100%;
+  object-fir: cover;
+}
+
+@media only screen and (max-width: 768px) {
+  .lightbox .box,
+  .container {
+    width: 90%;
+  }
+  
+  .profile-wrapper .profile-image {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .image-container {
+    columns: 1;
+  }
+}
