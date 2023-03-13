@@ -10,10 +10,6 @@ kode sudah saya sertakan dengan komentar supaya kalian para programmer pemula bi
 * css
 * javascript
 
-## lainnya
-
-* [bootstrap](https://getbootstrap.com)
-
 ## kontributor
 
 * candra dwi cahyo
@@ -34,4 +30,4 @@ git clone https://github.com/candradwicahyo/image-gallery.git
 
 ![preview](https://github.com/candradwicahyo/image-gallery/blob/master/image.jpg)
 
-[tekan link ini](https://candradwicahyo.github.io/image-galerry)
+[tekan link ini](https://candradwicahyo.github.io/image-galerry) untuk mencoba demo
