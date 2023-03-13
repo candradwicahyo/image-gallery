@@ -30,4 +30,4 @@ git clone https://github.com/candradwicahyo/image-gallery.git
 
 ![preview](https://github.com/candradwicahyo/image-gallery/blob/master/image.jpg)
 
-[tekan link ini](https://candradwicahyo.github.io/image-galerry) untuk mencoba demo
+[tekan link ini](https://candradwicahyo.github.io/image-gallery) untuk mencoba demo
