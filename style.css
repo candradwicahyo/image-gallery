@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+/* for desktop */
+.container {
+  position: relative;
+  width: 650px;
+  margin: 50px auto;
+  overflow: hidden;
+}
+
+.image-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  columns: 3;
+}
+
+.image-container .image-box {
+  position: relative;
+  width: 100%;
+}
+
+.image-container .image-box .image {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+
+.lightbox {
+  position: fixed;
+  top: -200%;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  background: rgba(0,0,0,0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 3;
+  transition: 0.5s ease;
+  overflow-y: scroll;
+}
+
+.lightbox.active {
+  top: 0;
+}
+
+.lightbox .box {
+  position: relative;
+  width: 400px;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  margin: 50px auto;
+}
+
+.lightbox .box .box-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.lightbox .box .box-wrapper .title {
+  color: royalblue;
+  font-weight: 500;
+}
+
+.lightbox .box .box-wrapper .btn-close {
+  font-size: 25px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.lightbox .box .image-lightbox {
+  position: relative;
+  width: 100%;
+  object-fit: cover;
+}
+
+/* for mobile */
+@media only screen and (max-width: 768px) {
+  .container {
+    width: 90%;
+  }
+  
+  .image-container {
+    columns: 1;
+  }
+  
+  .lightbox .box {
+    width: 90%;
+  }
+}
